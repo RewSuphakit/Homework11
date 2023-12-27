@@ -42,7 +42,7 @@ function SumInfo(props) {
   // กำหนด style ในตัวแปร stTitle โดยใช้ props.color และ props.size
   const stTitle = {
     color: props.color,
-    fontSize: props.size === "big" ? "50px" : "40px",
+    fontSize: props.size === "REW" ? "50px" : "40px",
   };
 
   // ส่วนแสดงผล JSX ของ SumInfo
@@ -102,7 +102,7 @@ function App() {
         </button>
       </div>
       {/* แสดง SumInfo โดยส่ง props ไปยัง SumInfo */}
-      <SumInfo color="red" size="big" counters={counters} />
+      <SumInfo color="red" size="REW" counters={counters} />
 
       {/* แสดง Counter สำหรับทุกรายการใน counters array */}
       {counters.map((el) => {
